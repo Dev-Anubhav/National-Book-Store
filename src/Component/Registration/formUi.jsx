@@ -4,10 +4,10 @@ import { TextField, FormControl, InputLabel, Select, MenuItem, Button, FormHelpe
 
 const FormUi = ({ handleBlur, handleChange, handleSubmit, touched, errors, values }) => {
   return (
-    <div className="bg-white p-6 md:p-8 rounded-xl shadow-md max-w-lg md:max-w-2xl mx-auto mt-8">
+    <div className="bg-white p-6 md:p-8 rounded-xl shadow-md max-w-lg md:max-w-xl mx-auto mt-8">
       <div className="text-center mb-6">
         <img src={logo} alt="Brand Logo" className="mx-auto h-12 md:h-16 w-auto" />
-        <h2 className="font-poppin font-semibold text-2xl md:text-4xl mt-4 md:mt-10 text-[#5C0627] text-left">
+        <h2 className="font-poppin font-semibold text-2xl md:text-3xl mt-4 md:mt-10 text-[#5C0627] text-left">
           Register for the Book Fair Event
         </h2>
       </div>

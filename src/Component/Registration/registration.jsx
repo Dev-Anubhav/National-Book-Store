@@ -4,6 +4,7 @@ import FormUi from "./formUi";
 import { useFormik } from "formik";
 import { bookAPIConfig } from "../../APi/apiConfig";
 import { useNavigate } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Registration = () => {
     const navi = useNavigate();
@@ -55,7 +56,9 @@ const Registration = () => {
 
     return (
         <div className="registration relative w-screen h-screen py-20 sm:py32">
-            <div className="max-w-4xl mx-auto">
+            <h4 className="ml-4 text-white font-poppin flex items-center gap-2 cursor-pointer" onClick={()=>navi('/')}><FaArrowLeft/> Return To Home</h4>
+
+            <div className="w-screen mx-auto">
                 <FormUi 
                     handleChange={handleChange}
                     handleSubmit={handleSubmit}

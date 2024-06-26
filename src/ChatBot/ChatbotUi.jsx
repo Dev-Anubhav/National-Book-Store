@@ -77,7 +77,7 @@ const ChatbotUi = ({ messages, input, setInput, handleSendMessage, setShow, hand
             {message.sender === 'bot' && message.data && message.data.length > 0 && (
               <div className='flex flex-row flex-wrap gap-2 mt-2'>
                 {message.data.map((item)=>(
-                  <span key={item.id} className='border border-[#880033] p-2 cursor-pointer' onClick={()=>handleSend(item.id)}>{item.title}</span>
+                  <span key={item.id} className='border border-[#880033] p-2 cursor-pointer' onClick={()=>handleSend(item.id)}>{item.Title}<b> {item.Authors}</b> </span>
                 ))}
               </div>
             )}

@@ -43,7 +43,6 @@ const CustomChatbot = ({ setShow }) => {
               "ngrok-skip-browser-warning": "1",
             }
           });
-
           const apiDataArray = response.data.data.data;
           const botMessage = {
             sender: 'bot',
@@ -55,7 +54,7 @@ const CustomChatbot = ({ setShow }) => {
         } catch (error) {
           console.error('Error searching for book:', error);
         }
-        setIsBookSearchMode(false);
+        
       } else {
 
         try {

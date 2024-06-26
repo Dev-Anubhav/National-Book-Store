@@ -93,6 +93,7 @@ const Searchbar = () => {
                 console.log(speechResult)
                 setValue(speechResult)
             };
+            handleSearch();
 
             recognition.onspeechend = () => {
                 recognition.stop();
