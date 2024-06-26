@@ -51,7 +51,7 @@ const Navbar=()=>{
           
             {menuOpen && (
                 <div className="md:hidden">
-                    <a href="#" className="block py-2 px-4 text-lg text-gray-700 hover:bg-gray-200">Home</a>
+                    <Link to='/' className="block py-2 px-4 text-lg text-gray-700 hover:bg-gray-200">Home</Link>
                     <a href="https://www.nbtindia.gov.in/catalogues__online-index.aspx" target="_black"  className="block py-2 px-4 text-lg text-gray-700 hover:bg-gray-200">Shop</a>
                     <a href="https://www.nbtindia.gov.in/aboutus__5__history.nbt" target="_black"  className="block py-2 px-4 text-lg text-gray-700 hover:bg-gray-200">About</a>
                     <a href="https://www.nbtindia.gov.in/popup-contactus.aspx" target="_black"  className="block py-2 px-4 text-lg text-gray-700 hover:bg-gray-200">Contact</a>

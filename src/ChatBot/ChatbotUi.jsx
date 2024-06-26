@@ -34,6 +34,7 @@ const ChatbotUi = ({ messages, input, setInput, handleSendMessage, setShow, hand
             const speechResult = event.results[0][0].transcript;
             console.log(speechResult)
             setInput(speechResult)
+            
         };
 
         recognition.onspeechend = () => {
